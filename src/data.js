@@ -1,6 +1,6 @@
 export const developers = [
   {
-    id: "DEV-002",
+    id: "DEV-001",
     slug: "john-paul",
     name: "John Paul",
     role: "Frontend Developer",
