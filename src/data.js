@@ -31,7 +31,7 @@ export const developers = [
 
   {
     id: "DEV-002",
-    slug: "mary-jane",
+    slug: "mary-jan",
     name: "Mary Jane",
     role: "UI/UX Designer",
     initials: "MJ",
