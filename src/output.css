@@ -259,6 +259,9 @@
   .grid {
     display: grid;
   }
+  .hidden {
+    display: none;
+  }
   .inline-block {
     display: inline-block;
   }
@@ -818,9 +821,31 @@
       padding-inline: 7%;
     }
   }
+  .lg\:flex {
+    @media (width >= 64rem) {
+      display: flex;
+    }
+  }
+  .lg\:min-h-\[92vh\] {
+    @media (width >= 64rem) {
+      min-height: 92vh;
+    }
+  }
   .lg\:translate-x-12 {
     @media (width >= 64rem) {
       --tw-translate-x: calc(var(--spacing) * 12);
+      translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
+  }
+  .lg\:translate-x-\[80px\] {
+    @media (width >= 64rem) {
+      --tw-translate-x: 80px;
+      translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
+  }
+  .lg\:translate-y-\[120px\] {
+    @media (width >= 64rem) {
+      --tw-translate-y: 120px;
       translate: var(--tw-translate-x) var(--tw-translate-y);
     }
   }
