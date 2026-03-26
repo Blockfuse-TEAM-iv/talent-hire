@@ -23,7 +23,7 @@ export const developers = [
       }
     ],
     links: {
-      github: "https://github.com/johnpaul",
+      github: "https://github.com/johnpau",
       linkedin: "",
       portfolio: ""
     }
