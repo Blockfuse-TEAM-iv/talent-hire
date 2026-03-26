@@ -64,7 +64,7 @@ export const developers = [
     available: false,
     location: "Ibadan, Nigeria",
     bio: "Backend developer specializing in APIs and database management.",
-    skills: ["Node.js", "Express", "MongoD"],
+    skills: ["Node.js", "Express", "MongoDB"],
     projects: [
       {
         name: "REST API System",
