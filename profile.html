@@ -1,128 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <meta name="description" content="Discover top Black software developers and tech talent ready to join your team." />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <meta name="description" content="Discover top Black software developers and tech talent ready to join your team." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="/src/output.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="/src/output.css" />
 </head>
-<body class="font-['Inter'] bg-brand-bg text-brand-text min-h-screen overflow-x-hidden">
 
-    
-  <div class="min-h-screen flex items-center justify-center p-6">
-    <div class="w-full max-w-6xl bg-white rounded-xl shadow-lg flex overflow-hidden">
+<body class="font-['Outfit'] bg-brand-bg text-brand-text min-h-screen flex flex-col overflow-x-hidden">
 
-      <!-- Sidebar -->
-      <aside class="w-80 bg-gray-50 p-6 flex flex-col items-center relative">
+  <!-- Main Dashboard Container -->
+  <div class="flex-1 flex items-center justify-center p-4 sm:p-6 lg:p-8 bg-brand-bg">
+    <div
+      class="w-full max-w-6xl bg-white rounded-2xl shadow-xl flex flex-col md:flex-row overflow-hidden border border-brand-border">
 
-        
+      <!-- ==========================================
+           Sidebar (Enhanced Spacing & Layout)
+      =========================================== -->
+      <aside
+        class="w-full md:w-80 bg-gray-50 border-b md:border-b-0 md:border-r border-gray-100 p-8 flex flex-col items-center relative gap-8">
 
-        <!-- Profile -->
-        <div class="mt-12 flex flex-col items-center">
-          <img src="/assets/images/WhatsApp Image 2026-03-01 at 11.33.21 AM.jpeg" class="w-24 h-24 rounded-xl shadow-md border-4 border-white"/>
+        <!-- Profile Area -->
+        <div class="mt-4 flex flex-col items-center text-center">
+          <!-- Avatar with subtle shadow & border -->
+          <div id="profile-avatar-wrapper" class="w-24 h-24 rounded-xl shadow-md border-4 border-white overflow-hidden">
+            <img src="/assets/images/WhatsApp Image 2026-03-01 at 11.33.21 AM.jpeg" alt="Miracle Ngwan"
+              class="w-full h-full object-cover">
+          </div>
 
-          <h2 class="mt-4 text-lg font-semibold">Miracle Ngwan</h2>
-          <p class="text-sm text-gray-500">Software Engineer</p>
+          <!-- Name & Role -->
+          <h2 id="profile-name" class="mt-4 text-lg font-semibold text-gray-900 tracking-tight">Miracle Ngwan</h2>
+          <p id="profile-role" class="text-sm text-gray-500 mt-1 uppercase tracking-wider">Software Engineer</p>
 
-          <!-- Social -->
-          <div class="flex gap-4 mt-3 text-gray-500 text-sm">
-            <a href=""><span><i class="fa-brands fa-square-facebook"></i></span></a>
-           <a href=""> <span><i class="fa-brands fa-x-twitter"></i></span></a>
-            <span>in</span>
+          <!-- Social Links -->
+          <div id="profile-links" class="flex flex-wrap justify-center gap-3 mt-4 w-full">
+            <!-- Dynamic links injected here -->
           </div>
         </div>
 
-        <!-- Info -->
-        <div class="mt-6 w-full text-sm text-gray-600 space-y-3">
-          <p>📅 December 24, 2000</p>
-          <p>📍 plateau state, Nigeria</p>
-          <p>✉ Nenwarrangngwan@gmail.com</p>
-          <p>📞 +234 810 2583 656</p>
-          <p>🌐 Miracle Ngwan</p>
+        <!-- Contact & Info Box -->
+        <div
+          class="w-full bg-white p-5 rounded-2xl border border-gray-100 shadow-sm text-[0.85rem] text-gray-600 flex flex-col gap-4 font-medium">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-lg bg-gray-50 flex items-center justify-center text-gray-400"><i
+                class="fa-solid fa-calendar"></i></div> <span id="profile-dob">December 24, 2000</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-lg bg-gray-50 flex items-center justify-center text-gray-400"><i
+                class="fa-solid fa-location-dot"></i></div> <span id="profile-location" class="truncate">Plateau State,
+              Nigeria</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-lg bg-gray-50 flex items-center justify-center text-gray-400"><i
+                class="fa-solid fa-envelope"></i></div> <span id="profile-email"
+              class="truncate">Nenwarrangngwan@gmail.com</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-lg bg-gray-50 flex items-center justify-center text-gray-400"><i
+                class="fa-solid fa-phone"></i></div> <span id="profile-phone">+234 810 2583 656</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-lg bg-gray-50 flex items-center justify-center text-gray-400"><i
+                class="fa-solid fa-globe"></i></div> <span id="profile-website" class="truncate">Miracle Ngwan</span>
+          </div>
         </div>
 
-        <!-- Button -->
-        <button class="mt-6 bg-purple-600 text-white px-5 py-2 rounded-full shadow hover:bg-purple-700 transition">
+        <!-- CTA Button -->
+        <button id="hire-btn"
+          class="w-full mt-auto bg-[linear-gradient(135deg,#6366f1,#8b5cf6)] text-white px-6 py-3.5 rounded-xl font-bold tracking-wide shadow-lg shadow-brand-accent/30 hover:shadow-xl hover:-translate-y-0.5 transition-all outline-none focus:ring-4 focus:ring-brand-accent/20">
           Hire Me
         </button>
 
       </aside>
 
-      <!-- Main Content -->
-      <main class="flex-1 p-8">
+      <!-- ==========================================
+           Main Content Area
+      =========================================== -->
+      <main class="flex-1 p-6 sm:p-10 flex flex-col bg-white">
 
-        <!-- Top right -->
-        <div class="flex justify-end">
-          <a href="index.html" class="text-gray-600 italic hover:underline">Back home</a>
-        </div>
+        <!-- Top Header (Back to Home button) -->
+        <header class="flex justify-between items-center border-b border-gray-100 pb-6 mb-8 mt-2">
+          <a href="index.html"
+            class="inline-flex items-center gap-2 px-5 py-2.5 bg-gray-50 hover:bg-gray-100 text-gray-700 font-bold rounded-xl transition-colors border border-gray-200 shadow-sm text-sm group">
+            <i class="fa-solid fa-arrow-left text-gray-400 group-hover:text-gray-700 transition-colors"></i> Back
+          </a>
+        </header>
 
-        <!-- About -->
-        <section class="mt-4">
-          <h2 class="text-xl font-semibold mb-2">About Me</h2>
-          <p class="text-gray-600 text-sm leading-relaxed">
-            I'm Junior Developer and Dog Breeder from  Jos, Plateau,
-            working in web development . I enjoy turning complex
-            problems into simple, beautiful and intuitive designs.
-          </p>
-          <p class="text-gray-600 text-sm mt-3 leading-relaxed">
-            My job is to build your website so that it is functional and user-friendly
-            but at the same time attractive. I add personal touch to your product and
-            make sure that is eye-catching and easy to use.
-          </p>
+        <!-- About Section -->
+        <section class="mb-12">
+          <h2 class="text-2xl font-extrabold text-gray-900 mb-5 tracking-tight flex items-center gap-2">
+            <i class="fa-solid fa-user text-brand-accent text-xl"></i> About Me
+          </h2>
+          <div
+            class="text-gray-600 text-[0.95rem] leading-relaxed space-y-4 bg-gray-50/50 p-6 rounded-2xl border border-gray-50">
+            <p id="profile-bio">
+              I am a Junior Developer and Dog Breeder from Jos, Plateau, working in web development. I enjoy turning
+              complex problems into simple, beautiful, and intuitive designs.
+            </p>
+            <p>
+              My job is to build your website so that it is functional and user-friendly, but at the same time highly
+              attractive. I add a personal touch to your product and make sure that it is visually striking and seamless
+              to use.
+            </p>
+          </div>
         </section>
 
-        <!-- What I'm Doing -->
-        <section class="mt-8">
-          <h2 class="text-xl font-semibold mb-4">What I'm Doing</h2>
+        <!-- Tech Stacks Section -->
+        <section>
+          <h2 class="text-2xl font-extrabold text-gray-900 mb-6 tracking-tight flex items-center gap-2">
+            <i class="fa-solid fa-code text-brand-accent text-xl"></i> Tech Stacks
+          </h2>
 
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-
-            <!-- Card -->
-            <div class="bg-gray-50 p-4 rounded-lg shadow-sm flex gap-3 items-start">
-              <div class="text-purple-600 text-xl">💻</div>
-              <div>
-                <h3 class="font-semibold text-sm">Web Design</h3>
-                <p class="text-gray-500 text-xs">
-                  The most modern and high-quality design made at a professional level
-                </p>
-              </div>
-            </div>
-
-            <div class="bg-gray-50 p-4 rounded-lg shadow-sm flex gap-3 items-start">
-              <div class="text-purple-600 text-xl">🧑‍💻</div>
-              <div>
-                <h3 class="font-semibold text-sm">Web Development</h3>
-                <p class="text-gray-500 text-xs">
-                  High-quality and professional development of sites
-                </p>
-              </div>
-            </div>
-
-            <div class="bg-gray-50 p-4 rounded-lg shadow-sm flex gap-3 items-start">
-              <div class="text-purple-600 text-xl">📱</div>
-              <div>
-                <h3 class="font-semibold text-sm">Mobile Apps</h3>
-                <p class="text-gray-500 text-xs">
-                  Professional development of applications for iOS and Android
-                </p>
-              </div>
-            </div>
-
-            <div class="bg-gray-50 p-4 rounded-lg shadow-sm flex gap-3 items-start">
-              <div class="text-purple-600 text-xl">📷</div>
-              <div>
-                <h3 class="font-semibold text-sm">Photography</h3>
-                <p class="text-gray-500 text-xs">
-                  I make high-quality photos of any category at a professional level
-                </p>
-              </div>
-            </div>
-
+          <div id="profile-skills" class="flex flex-wrap gap-4 sm:gap-6 mt-4">
+            <!-- Dynamic Stack Icons injected from app.js -->
           </div>
         </section>
 
@@ -131,8 +130,54 @@
     </div>
   </div>
 
+  <!-- Simple Theme-Matched Footer -->
+  <footer class="py-6 px-7 bg-white border-t border-gray-200 mt-auto">
+    <div class="flex justify-center items-center text-center">
+      <p class="text-gray-500 text-[0.95rem] font-medium">&copy; 2026 DevTalent. All rights reserved.</p>
+    </div>
+  </footer>
 
+  <script src="./src/app.js" type="module"></script>
 
-    
+  <!-- Hire Me Modal (Hidden by default via inline CSS overlay) -->
+  <div id="hire-modal"
+    style="display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; z-index: 50; background-color: rgba(17,24,39,0.7); backdrop-filter: blur(4px); align-items: center; justify-content: center; padding: 1rem;">
+    <div class="bg-white rounded-2xl shadow-2xl" id="hire-modal-content"
+      style="width: 90%; max-width: 460px; padding: 2rem;">
+      <div class="flex justify-between items-center mb-6">
+        <h3 id="hire-modal-title" class="text-2xl font-extrabold text-gray-900 tracking-tight">Hire Developer</h3>
+        <button id="hire-modal-close"
+          class="text-gray-400 hover:text-gray-700 hover:bg-gray-100 p-2 rounded-full transition-colors outline-none focus:ring-2 focus:ring-gray-200">
+          <i class="fa-solid fa-xmark text-xl"></i>
+        </button>
+      </div>
+      <form id="hire-form" action="https://formspree.io/" method="POST" class="flex flex-col gap-4">
+        <div>
+          <label class="block text-sm font-bold text-gray-700 mb-1.5">Your Name</label>
+          <input type="text" name="name" required
+            class="w-full px-4 py-3.5 rounded-xl border border-gray-200 bg-gray-50 focus:bg-white focus:ring-2 focus:ring-brand-accent focus:border-transparent outline-none transition-all placeholder-gray-400 font-medium"
+            placeholder="John Doe">
+        </div>
+        <div>
+          <label class="block text-sm font-bold text-gray-700 mb-1.5">Your Email</label>
+          <input type="email" name="_replyto" required
+            class="w-full px-4 py-3.5 rounded-xl border border-gray-200 bg-gray-50 focus:bg-white focus:ring-2 focus:ring-brand-accent focus:border-transparent outline-none transition-all placeholder-gray-400 font-medium"
+            placeholder="contact@example.com">
+        </div>
+        <div>
+          <label class="block text-sm font-bold text-gray-700 mb-1.5">Project Details</label>
+          <textarea name="message" rows="4" required
+            class="w-full px-4 py-3.5 rounded-xl border border-gray-200 bg-gray-50 focus:bg-white focus:ring-2 focus:ring-brand-accent focus:border-transparent outline-none transition-all placeholder-gray-400 resize-none font-medium"
+            placeholder="Tell us about the role or project..."></textarea>
+        </div>
+        <button type="submit"
+          class="w-full mt-3 bg-[linear-gradient(135deg,#6366f1,#8b5cf6)] text-white px-6 py-4 rounded-xl font-bold tracking-wide shadow-lg shadow-brand-accent/30 hover:shadow-xl hover:-translate-y-0.5 transition-all outline-none focus:ring-4 focus:ring-brand-accent/20">
+          Send Message
+        </button>
+      </form>
+    </div>
+  </div>
+
 </body>
+
 </html>
