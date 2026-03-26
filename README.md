@@ -22,12 +22,12 @@ Talent Hire displays developer profiles as cards on the homepage. Clicking a car
 
 ## File Structure
 project/
-├── index.html ← Cards listing page
-├── profile.html ← Single profile page
-├── data.js ← Developer objects (source of truth)
-├── app.js ← Render and routing logic
-├── src/input.css ← Tailwind entry point
-└── src/output.css ← Compiled CSS (do not edit)
+- ├── index.html ← Cards listing page
+- ├── profile.html ← Single profile page
+- ├── data.js ← Developer objects (source of truth)
+- ├── app.js ← Render and routing logic
+- ├── src/input.css ← Tailwind entry point
+- └── src/output.css ← Compiled CSS (do not edit)
 
 ## Key Features
 - Dynamic rendering of cards and profile details from `data.js`  
