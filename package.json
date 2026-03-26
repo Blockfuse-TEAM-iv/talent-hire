@@ -1,0 +1,24 @@
+{
+  "name": "talent-hire",
+  "version": "1.0.0",
+  "description": "**A responsive, dynamic developer profile board built with HTML, Tailwind CSS v4, and Vanilla JavaScript.**",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Blockfuse-TEAM-iv/talent-hire.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Blockfuse-TEAM-iv/talent-hire/issues"
+  },
+  "homepage": "https://github.com/Blockfuse-TEAM-iv/talent-hire#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.2.2",
+    "tailwindcss": "^4.2.2"
+  }
+}
