@@ -128,4 +128,13 @@
   .card-btn {
     @apply block w-full py-4 text-center bg-gray-50 text-brand-dark font-bold hover:bg-brand-primary hover:text-white transition-colors border-t border-gray-100;
   }
+
+  /* Footer Section */
+  footer {
+    @apply py-12 border-t border-gray-100 bg-gray-50;
+  }
+
+  .footer-content {
+    @apply max-w-7xl mx-auto px-4 text-center text-gray-400 text-sm font-medium;
+  }
 }
