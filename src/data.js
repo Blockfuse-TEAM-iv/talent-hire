@@ -4,7 +4,7 @@ export const developers = [
     slug: "john-paul",
     name: "John Paul",
     role: "Frontend Developer",
-    initials: "Js",
+    initials: "Jp",
     avatar: "",
     available: true,
     location: "Abuja, Nigeria",
