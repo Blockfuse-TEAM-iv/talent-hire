@@ -5,7 +5,7 @@ export const developers = [
     name: "John Paul",
     role: "Frontend Developer",
     initials: "JP",
-    avatar: "",
+    avatar: "paul",
     available: true,
     location: "Abuja, Nigeria",
     bio: "Passionate frontend developer focused on building clean and responsive user interfaces using modern tools like Tailwind CSS.",
