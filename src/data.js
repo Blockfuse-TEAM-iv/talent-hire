@@ -36,7 +36,7 @@ export const developers = [
     role: "UI/UX Designer",
     initials: "MJ",
     avatar: "",
-    available: tru,
+    available: true,
     location: "Lagos, Nigeria",
     bio: "Creative UI/UX designer who loves designing user-friendly and visually appealing interfaces.",
     skills: ["Figma", "Adobe XD", "Wireframing", "Prototyping"],
