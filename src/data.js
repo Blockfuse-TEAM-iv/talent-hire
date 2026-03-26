@@ -7,7 +7,7 @@ export const developers = [
     initials: "Jp",
     avatar: "",
     available: true,
-    location: "Abuja, Nigeria",
+    location: "Abuja, Nigeri",
     bio: "Passionate frontend developer focused on building clean and responsive user interfaces using modern tools like Tailwind CSS.",
     skills: ["HTML", "CSS", "JavaScript", "Tailwind CSS"],
     projects: [
