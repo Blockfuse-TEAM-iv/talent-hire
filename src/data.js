@@ -12,7 +12,7 @@ export const developers = [
     skills: ["HTML", "CSS", "JavaScript", "Tailwind CSS"],
     projects: [
       {
-        name: "Glowly Skincare",
+        name: "Glowly Skincar",
         desc: "A responsive skincare website built with Tailwind CSS.",
         tech: ["HTML", "Tailwind CSS"]
       },
