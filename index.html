@@ -10,35 +10,35 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./output.css" />
 </head>
-<body>
+<body class="font-sans bg-brand-bg text-brand-text min-h-screen overflow-x-hidden">
     <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-content">
-      <span class="hero-tag">🚀 Top 1% of Engineers</span>
-      <h1 class="hero-title">Discover<br /><span class="highlight">Talent</span></h1>
-      <p class="hero-sub">Connect with world-class developers, designers, and engineers ready to build the future with you.</p>
-      <div class="hero-actions">
-        <a href="#profiles" class="btn-primary">Browse Talent</a>
+  <section class="relative min-h-[92vh] grid grid-cols-1 lg:grid-cols-2 items-center gap-10 px-[7%] py-20 overflow-hidden">
+    <div class="relative z-10 max-w-[560px]">
+      <span class="inline-block bg-[#ede9fe] border border-[#c4b5fd] text-brand-accent2 text-[0.82rem] font-bold tracking-wider px-4 py-1.5 rounded-full mb-7">🚀 Top 1% of Engineers</span>
+      <h1 class="text-[clamp(2.8rem,6vw,5rem)] font-black leading-[1.05] tracking-tight mb-6">Discover<br /><span class="bg-linear-to-tr from-[#6366f1] via-[#8b5cf6] to-[#ec4899] bg-clip-text text-transparent">Talent</span></h1>
+      <p class="text-[1.05rem] text-brand-muted leading-relaxed max-w-[460px] mb-10">Connect with world-class developers, designers, and engineers ready to build the future with you.</p>
+      <div class="mb-14">
+        <a href="#profiles" class="inline-block bg-linear-to-tr from-brand-accent to-brand-accent2 text-white font-bold text-[0.95rem] px-9 py-3.5 rounded-full transition-all hover:-translate-y-0.5 shadow-[0_6px_24px_rgba(99,102,241,0.35)] hover:shadow-[0_12px_32px_rgba(99,102,241,0.45)]">Browse Talent</a>
       </div>
-      <div class="hero-stats">
-        <div class="stat">
-          <span class="stat-num">1,200+</span>
-          <span class="stat-label">Vetted Profiles</span>
+      <div class="flex items-center gap-7">
+        <div class="flex flex-col gap-0.5">
+          <span class="text-[1.6rem] font-black text-brand-accent2 tracking-tight">1,200+</span>
+          <span class="text-[0.78rem] text-brand-muted font-medium">Vetted Profiles</span>
         </div>
-        <div class="stat-divider"></div>
-        <div class="stat">
-          <span class="stat-num">98%</span>
-          <span class="stat-label">Hire Rate</span>
+        <div class="w-px h-10 bg-brand-border"></div>
+        <div class="flex flex-col gap-0.5">
+          <span class="text-[1.6rem] font-black text-brand-accent2 tracking-tight">98%</span>
+          <span class="text-[0.78rem] text-brand-muted font-medium">Hire Rate</span>
         </div>
-        <div class="stat-divider"></div>
-        <div class="stat">
-          <span class="stat-num">48h</span>
-          <span class="stat-label">Avg. Match Time</span>
+        <div class="w-px h-10 bg-brand-border"></div>
+        <div class="flex flex-col gap-0.5">
+          <span class="text-[1.6rem] font-black text-brand-accent2 tracking-tight">48h</span>
+          <span class="text-[0.78rem] text-brand-muted font-medium">Avg. Match Time</span>
         </div>
       </div>
     </div>
-    <div class="hero-visual">
-      <svg viewBox="0 0 580 520" fill="none" xmlns="http://www.w3.org/2000/svg" class="geek-svg" aria-label="Developer workspace illustration">
+    <div class="relative z-10 flex items-center justify-center lg:justify-end lg:mt-32">
+      <svg viewBox="0 0 580 520" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full max-w-[640px] drop-shadow-[0_20px_60px_rgba(99,102,241,0.12)]" aria-label="Developer workspace illustration">
 
         <defs>
           <filter id="shadow" x="-12%" y="-12%" width="124%" height="136%">
@@ -131,100 +131,108 @@
   </section>
 
    <!-- Profile Cards Section -->
-  <section class="profiles" id="profiles">
-    <div class="section-header">
-      <h2 class="section-title">Featured Developers</h2>
-      <p class="section-sub">Hand-picked engineers with proven track records</p>
+  <section class="py-20 px-[7%] bg-white" id="profiles">
+    <div class="mb-12">
+      <h2 class="text-[2rem] font-extrabold tracking-tight mb-2">Featured Developers</h2>
+      <p class="text-brand-muted text-base">Hand-picked engineers with proven track records</p>
     </div>
 
-    <div class="cards-grid">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
 
       <!-- Card 1 -->
-      <article class="profile-card">
-        <div class="card-top">
-          <img src="assets/images/profile_male_1.png" alt="Kofi Mensah – Full Stack Developer" class="avatar" />
-          <div class="availability available">Available</div>
+      <article class="bg-brand-card border-[1.5px] border-brand-border rounded-[18px] flex flex-col overflow-hidden transition-all duration-250 hover:-translate-y-1.5 hover:shadow-[0_16px_48px_rgba(99,102,241,0.15)] hover:border-[#a5b4fc] group">
+        <div class="relative bg-linear-to-tr from-[#eef2ff] to-[#f5f3ff] p-7 pb-5 flex justify-center">
+          <img src="assets/images/profile_male_1.png" alt="Kofi Mensah – Full Stack Developer" class="w-[90px] h-[90px] rounded-full object-cover border-3 border-[#a5b4fc] ring-6 ring-indigo-500/10" />
+          <div class="absolute top-3.5 right-3.5 text-[0.7rem] font-bold tracking-wider px-2.5 py-1 rounded-full bg-[#dcfce7] text-brand-green border border-[#bbf7d0]">Available</div>
         </div>
-        <div class="card-body">
-          <h3 class="card-name">Kofi Mensah</h3>
-          <p class="card-role">Full Stack Developer</p>
-          <div class="card-skills">
-            <span>React</span><span>Node.js</span><span>TypeScript</span>
+        <div class="p-5 flex-1">
+          <h3 class="text-[1.05rem] font-bold mb-1">Kofi Mensah</h3>
+          <p class="text-[0.82rem] text-brand-accent font-semibold mb-3.5">Full Stack Developer</p>
+          <div class="flex flex-wrap gap-1.5 mb-4">
+            <span class="bg-[#eef2ff] border border-[#c7d2fe] text-brand-accent2 text-[0.72rem] font-semibold px-2.5 py-0.5 rounded-full">React</span>
+            <span class="bg-[#eef2ff] border border-[#c7d2fe] text-brand-accent2 text-[0.72rem] font-semibold px-2.5 py-0.5 rounded-full">Node.js</span>
+            <span class="bg-[#eef2ff] border border-[#c7d2fe] text-brand-accent2 text-[0.72rem] font-semibold px-2.5 py-0.5 rounded-full">TypeScript</span>
           </div>
-          <div class="card-meta">
-            <span class="card-exp">5 yrs exp.</span>
-            <span class="card-location">📍 Lagos, Nigeria</span>
+          <div class="flex justify-between text-[0.75rem] text-brand-muted">
+            <span>5 yrs exp.</span>
+            <span>📍 Lagos, Nigeria</span>
           </div>
         </div>
-        <a href="#" class="card-btn">View Profile</a>
+        <a href="#" class="block text-center mx-6 mb-6 p-[11px] rounded-[10px] bg-[#eef2ff] border-[1.5px] border-[#c7d2fe] text-brand-accent2 font-bold text-[0.85rem] transition-colors hover:bg-brand-accent hover:text-white hover:border-brand-accent">View Profile</a>
       </article>
 
       <!-- Card 2 -->
-      <article class="profile-card">
-        <div class="card-top">
-          <img src="assets/images/profile_female_1.png" alt="Amara Diallo – Backend Engineer" class="avatar" />
-          <div class="availability available">Available</div>
+      <article class="bg-brand-card border-[1.5px] border-brand-border rounded-[18px] flex flex-col overflow-hidden transition-all duration-250 hover:-translate-y-1.5 hover:shadow-[0_16px_48px_rgba(99,102,241,0.15)] hover:border-[#a5b4fc] group">
+        <div class="relative bg-linear-to-tr from-[#eef2ff] to-[#f5f3ff] p-7 pb-5 flex justify-center">
+          <img src="assets/images/profile_female_1.png" alt="Amara Diallo – Backend Engineer" class="w-[90px] h-[90px] rounded-full object-cover border-3 border-[#a5b4fc] ring-6 ring-indigo-500/10" />
+          <div class="absolute top-3.5 right-3.5 text-[0.7rem] font-bold tracking-wider px-2.5 py-1 rounded-full bg-[#dcfce7] text-brand-green border border-[#bbf7d0]">Available</div>
         </div>
-        <div class="card-body">
-          <h3 class="card-name">Amara Diallo</h3>
-          <p class="card-role">Backend Engineer</p>
-          <div class="card-skills">
-            <span>Python</span><span>Django</span><span>PostgreSQL</span>
+        <div class="p-5 flex-1">
+          <h3 class="text-[1.05rem] font-bold mb-1">Amara Diallo</h3>
+          <p class="text-[0.82rem] text-brand-accent font-semibold mb-3.5">Backend Engineer</p>
+          <div class="flex flex-wrap gap-1.5 mb-4">
+            <span class="bg-[#eef2ff] border border-[#c7d2fe] text-brand-accent2 text-[0.72rem] font-semibold px-2.5 py-0.5 rounded-full">Python</span>
+            <span class="bg-[#eef2ff] border border-[#c7d2fe] text-brand-accent2 text-[0.72rem] font-semibold px-2.5 py-0.5 rounded-full">Django</span>
+            <span class="bg-[#eef2ff] border border-[#c7d2fe] text-brand-accent2 text-[0.72rem] font-semibold px-2.5 py-0.5 rounded-full">PostgreSQL</span>
           </div>
-          <div class="card-meta">
-            <span class="card-exp">4 yrs exp.</span>
-            <span class="card-location">📍 Accra, Ghana</span>
+          <div class="flex justify-between text-[0.75rem] text-brand-muted">
+            <span>4 yrs exp.</span>
+            <span>📍 Accra, Ghana</span>
           </div>
         </div>
-        <a href="#" class="card-btn">View Profile</a>
+        <a href="#" class="block text-center mx-6 mb-6 p-[11px] rounded-[10px] bg-[#eef2ff] border-[1.5px] border-[#c7d2fe] text-brand-accent2 font-bold text-[0.85rem] transition-colors hover:bg-brand-accent hover:text-white hover:border-brand-accent">View Profile</a>
       </article>
 
       <!-- Card 3 -->
-      <article class="profile-card">
-        <div class="card-top">
-          <img src="assets/images/profile_male_2.png" alt="Emeka Okafor – Engineering Lead" class="avatar" />
-          <div class="availability busy">On a project</div>
+      <article class="bg-brand-card border-[1.5px] border-brand-border rounded-[18px] flex flex-col overflow-hidden transition-all duration-250 hover:-translate-y-1.5 hover:shadow-[0_16px_48px_rgba(99,102,241,0.15)] hover:border-[#a5b4fc] group">
+        <div class="relative bg-linear-to-tr from-[#eef2ff] to-[#f5f3ff] p-7 pb-5 flex justify-center">
+          <img src="assets/images/profile_male_2.png" alt="Emeka Okafor – Engineering Lead" class="w-[90px] h-[90px] rounded-full object-cover border-3 border-[#a5b4fc] ring-6 ring-indigo-500/10" />
+          <div class="absolute top-3.5 right-3.5 text-[0.7rem] font-bold tracking-wider px-2.5 py-1 rounded-full bg-[#dcfce7] text-brand-green border border-[#bbf7d0]">Available</div>
         </div>
-        <div class="card-body">
-          <h3 class="card-name">Emeka Okafor</h3>
-          <p class="card-role">Engineering Lead</p>
-          <div class="card-skills">
-            <span>Go</span><span>Kubernetes</span><span>AWS</span>
+        <div class="p-5 flex-1">
+          <h3 class="text-[1.05rem] font-bold mb-1">Emeka Okafor</h3>
+          <p class="text-[0.82rem] text-brand-accent font-semibold mb-3.5">Engineering Lead</p>
+          <div class="flex flex-wrap gap-1.5 mb-4">
+            <span class="bg-[#eef2ff] border border-[#c7d2fe] text-brand-accent2 text-[0.72rem] font-semibold px-2.5 py-0.5 rounded-full">Go</span>
+            <span class="bg-[#eef2ff] border border-[#c7d2fe] text-brand-accent2 text-[0.72rem] font-semibold px-2.5 py-0.5 rounded-full">Kubernetes</span>
+            <span class="bg-[#eef2ff] border border-[#c7d2fe] text-brand-accent2 text-[0.72rem] font-semibold px-2.5 py-0.5 rounded-full">AWS</span>
           </div>
-          <div class="card-meta">
-            <span class="card-exp">10 yrs exp.</span>
-            <span class="card-location">📍 Nairobi, Kenya</span>
+          <div class="flex justify-between text-[0.75rem] text-brand-muted">
+            <span>10 yrs exp.</span>
+            <span>📍 Nairobi, Kenya</span>
           </div>
         </div>
-        <a href="#" class="card-btn">View Profile</a>
+        <a href="#" class="block text-center mx-6 mb-6 p-[11px] rounded-[10px] bg-[#eef2ff] border-[1.5px] border-[#c7d2fe] text-brand-accent2 font-bold text-[0.85rem] transition-colors hover:bg-brand-accent hover:text-white hover:border-brand-accent">View Profile</a>
       </article>
 
       <!-- Card 4 -->
-      <article class="profile-card">
-        <div class="card-top">
-          <img src="assets/images/profile_female_2.png" alt="Zara Kamara – UI/UX Designer" class="avatar" />
-          <div class="availability available">Available</div>
+      <article class="bg-brand-card border-[1.5px] border-brand-border rounded-[18px] flex flex-col overflow-hidden transition-all duration-250 hover:-translate-y-1.5 hover:shadow-[0_16px_48px_rgba(99,102,241,0.15)] hover:border-[#a5b4fc] group">
+        <div class="relative bg-linear-to-tr from-[#eef2ff] to-[#f5f3ff] p-7 pb-5 flex justify-center">
+          <img src="assets/images/profile_female_2.png" alt="Zara Kamara – UI/UX Designer" class="w-[90px] h-[90px] rounded-full object-cover border-3 border-[#a5b4fc] ring-6 ring-indigo-500/10" />
+          <div class="absolute top-3.5 right-3.5 text-[0.7rem] font-bold tracking-wider px-2.5 py-1 rounded-full bg-[#dcfce7] text-brand-green border border-[#bbf7d0]">Available</div>
         </div>
-        <div class="card-body">
-          <h3 class="card-name">Zara Kamara</h3>
-          <p class="card-role">UI/UX Designer</p>
-          <div class="card-skills">
-            <span>Figma</span><span>Framer</span><span>CSS</span>
+        <div class="p-5 flex-1">
+          <h3 class="text-[1.05rem] font-bold mb-1">Zara Kamara</h3>
+          <p class="text-[0.82rem] text-brand-accent font-semibold mb-3.5">UI/UX Designer</p>
+          <div class="flex flex-wrap gap-1.5 mb-4">
+            <span class="bg-[#eef2ff] border border-[#c7d2fe] text-brand-accent2 text-[0.72rem] font-semibold px-2.5 py-0.5 rounded-full">Figma</span>
+            <span class="bg-[#eef2ff] border border-[#c7d2fe] text-brand-accent2 text-[0.72rem] font-semibold px-2.5 py-0.5 rounded-full">Framer</span>
+            <span class="bg-[#eef2ff] border border-[#c7d2fe] text-brand-accent2 text-[0.72rem] font-semibold px-2.5 py-0.5 rounded-full">CSS</span>
           </div>
-          <div class="card-meta">
-            <span class="card-exp">3 yrs exp.</span>
-            <span class="card-location">📍 Dakar, Senegal</span>
+          <div class="flex justify-between text-[0.75rem] text-brand-muted">
+            <span>3 yrs exp.</span>
+            <span>📍 Dakar, Senegal</span>
           </div>
         </div>
-        <a href="#" class="card-btn">View Profile</a>
+        <a href="#" class="block text-center mx-6 mb-6 p-[11px] rounded-[10px] bg-[#eef2ff] border-[1.5px] border-[#c7d2fe] text-brand-accent2 font-bold text-[0.85rem] transition-colors hover:bg-brand-accent hover:text-white hover:border-brand-accent">View Profile</a>
       </article>
 
     </div>
   </section>
 
-   <footer>
-    <div class="footer-content">
-      <p>&copy; 2026 DevTalent. All rights reserved.</p>
+  <footer class="py-6 px-[7%] bg-white border-t border-brand-border">
+    <div class="flex justify-center items-center text-center">
+      <p class="text-brand-muted text-[0.95rem] font-medium">&copy; 2026 DevTalent. All rights reserved.</p>
     </div>
   </footer>
 
