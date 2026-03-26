@@ -13,7 +13,7 @@ Talent Hire displays developer profiles as cards on the homepage. Clicking a car
 
 ---
 
-## Tech Stack
+## Technical Stack
 - **HTML5** — semantic markup  
 - **Tailwind CSS v4 (CLI)** — utility-first styling  
 - **Vanilla JavaScript (ES Modules)** — dynamic rendering and routing  
