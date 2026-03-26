@@ -5,23 +5,17 @@ export const developers = [
     name: "John Paul",
     role: "Frontend Developer",
     initials: "Jp",
-    avatar: "",
+    avatar: "assets/images/profile_male_1.png",
     available: true,
     location: "Abuja, Nigeria",
+    experience: "5 yrs exp.",
+    differ: "",
+    dob: "January 15, 1995",
+    email: "john.paul@example.com",
+    phone: "+234 801 234 5678",
+    website: "johnpaul.dev",
     bio: "Passionate frontend developer focused on building clean and responsive user interfaces using modern tools like Tailwind CSS.",
     skills: ["HTML", "CSS", "JavaScript", "Tailwind CSS"],
-    projects: [
-      {
-        name: "Glowly Skincare",
-        desc: "A responsive skincare website built with Tailwind CSS.",
-        tech: ["HTML", "Tailwind CSS"]
-      },
-      {
-        name: "Food Restaurant Website",
-        desc: "A restaurant landing page with menu and contact section.",
-        tech: ["HTML", "CSS", "JavaScript"]
-      }
-    ],
     links: {
       github: "https://github.com/johnpaul",
       linkedin: "",
@@ -35,18 +29,17 @@ export const developers = [
     name: "Mary Jane",
     role: "UI/UX Designer",
     initials: "MJ",
-    avatar: "",
+    avatar: "assets/images/profile_female_1.png",
     available: true,
     location: "Lagos, Nigeria",
+    experience: "4 yrs exp.",
+    differ: "",
+    dob: "March 22, 1998",
+    email: "mary.jane@example.com",
+    phone: "+234 802 345 6789",
+    website: "maryjane.design",
     bio: "Creative UI/UX designer who loves designing user-friendly and visually appealing interfaces.",
     skills: ["Figma", "Adobe XD", "Wireframing", "Prototyping"],
-    projects: [
-      {
-        name: "Mobile Banking App Design",
-        desc: "Designed a clean and intuitive banking app interface.",
-        tech: ["Figma"]
-      }
-    ],
     links: {
       github: "",
       linkedin: "https://linkedin.com/in/maryjane",
@@ -61,17 +54,16 @@ export const developers = [
     role: "Backend Developer",
     initials: "DO",
     avatar: "",
-    available: false,
+    available: true,
     location: "Ibadan, Nigeria",
+    experience: "10 yrs exp.",
+    differ: "",
+    dob: "July 10, 1991",
+    email: "david.ola@example.com",
+    phone: "+234 803 456 7890",
+    website: "davidola.tech",
     bio: "Backend developer specializing in APIs and database management.",
     skills: ["Node.js", "Express", "MongoDB"],
-    projects: [
-      {
-        name: "REST API System",
-        desc: "Built a scalable REST API for a web application.",
-        tech: ["Node.js", "Express", "MongoDB"]
-      }
-    ],
     links: {
       github: "https://github.com/davidola",
       linkedin: "",
@@ -88,19 +80,202 @@ export const developers = [
     avatar: "",
     available: true,
     location: "Kano, Nigeria",
+    experience: "3 yrs exp.",
+    differ: "",
+    dob: "November 5, 1996",
+    email: "fatima.ali@example.com",
+    phone: "+234 804 567 8901",
+    website: "fatimaali.io",
     bio: "Full stack developer with experience in building complete web applications.",
     skills: ["HTML", "CSS", "JavaScript", "React", "Node.js"],
-    projects: [
-      {
-        name: "E-commerce Website",
-        desc: "Developed a full e-commerce platform with frontend and backend.",
-        tech: ["React", "Node.js", "MongoDB"]
-      }
-    ],
     links: {
       github: "https://github.com/fatimaali",
       linkedin: "",
       portfolio: ""
+    }
+  },
+  {
+    id: "DEV-005",
+    slug: "chidi-nwachukwu",
+    name: "Chidi Nwachukwu",
+    role: "DevOps Engineer",
+    initials: "CN",
+    avatar: "",
+    available: true,
+    location: "Enugu, Nigeria",
+    experience: "7 yrs exp.",
+    differ: "",
+    dob: "August 18, 1993",
+    email: "chidi.devops@example.com",
+    phone: "+234 815 123 4567",
+    website: "chidicloud.tech",
+    bio: "Cloud infrastructure architect and automation expert specializing in CI/CD pipelines and Kubernetes deployments.",
+    skills: ["AWS", "Docker", "Python"],
+    links: {
+      github: "https://github.com/chidi",
+      linkedin: "https://linkedin.com/in/chidi",
+      portfolio: ""
+    }
+  },
+  {
+    id: "DEV-006",
+    slug: "amina-yusuf",
+    name: "Amina Yusuf",
+    role: "Product Designer",
+    initials: "AY",
+    avatar: "",
+    available: false,
+    location: "Kaduna, Nigeria",
+    experience: "5 yrs exp.",
+    differ: "",
+    dob: "February 28, 1997",
+    email: "amina.design@example.com",
+    phone: "+234 809 987 6543",
+    website: "aminadesigns.com",
+    bio: "User-centric product designer who crafts empathetic and delightful digital experiences.",
+    skills: ["Figma", "Adobe XD", "Prototyping", "Wireframing"],
+    links: {
+      github: "",
+      linkedin: "https://linkedin.com/in/amina-y",
+      portfolio: "https://aminadesigns.com"
+    }
+  },
+  {
+    id: "DEV-007",
+    slug: "segun-ade",
+    name: "Segun Adebayo",
+    role: "Frontend Developer",
+    initials: "SA",
+    avatar: "",
+    available: true,
+    location: "Lagos, Nigeria",
+    experience: "6 yrs exp.",
+    differ: "",
+    dob: "September 12, 1994",
+    email: "segun.codes@example.com",
+    phone: "+234 812 345 6789",
+    website: "segun.dev",
+    bio: "Creator of stunning accessible UI components and passionate Vue & React developer.",
+    skills: ["React", "JavaScript", "Tailwind CSS", "HTML"],
+    links: {
+      github: "https://github.com/segunade",
+      linkedin: "https://linkedin.com/in/segunade",
+      portfolio: ""
+    }
+  },
+  {
+    id: "DEV-008",
+    slug: "ngozi-okafor",
+    name: "Ngozi Okafor",
+    role: "Data Scientist",
+    initials: "NO",
+    avatar: "",
+    available: true,
+    location: "Port Harcourt, Nigeria",
+    experience: "4 yrs exp.",
+    differ: "",
+    dob: "June 05, 1998",
+    email: "ngozi.data@example.com",
+    phone: "+234 808 111 2222",
+    website: "ngozianalytics.io",
+    bio: "Data enthusiast turning raw datasets into actionable machine learning models.",
+    skills: ["Python", "MongoDB"],
+    links: {
+      github: "https://github.com/ngozi-data",
+      linkedin: "https://linkedin.com/in/ngozi-data",
+      portfolio: ""
+    }
+  },
+  {
+    id: "DEV-009",
+    slug: "ebuka-obi",
+    name: "Ebuka Obi",
+    role: "Mobile App Developer",
+    initials: "EO",
+    avatar: "",
+    available: true,
+    location: "Asaba, Nigeria",
+    experience: "3 yrs exp.",
+    differ: "",
+    dob: "December 01, 1999",
+    email: "akinladetemitope90@gmail.com",
+    phone: "+234 805 333 4444",
+    website: "ebukamobile.dev",
+    bio: "Building performant and beautiful cross-platform applications using React Native and Flutter.",
+    skills: ["React", "JavaScript", "Node.js"],
+    links: {
+      github: "https://github.com/ebuka-mobile",
+      linkedin: "",
+      portfolio: "https://ebukamobile.dev"
+    }
+  },
+  {
+    id: "DEV-010",
+    slug: "zainab-balogun",
+    name: "Zainab Balogun",
+    role: "Full Stack Developer",
+    initials: "ZB",
+    avatar: "",
+    available: true,
+    location: "Abuja, Nigeria",
+    experience: "8 yrs exp.",
+    differ: "",
+    dob: "May 14, 1992",
+    email: "zainab.code@example.com",
+    phone: "+234 802 555 6666",
+    website: "zainab.me",
+    bio: "Experienced full-stack engineer building scalable web architecture from database to browser.",
+    skills: ["Node.js", "React", "Express", "Docker"],
+    links: {
+      github: "https://github.com/zainab-code",
+      linkedin: "https://linkedin.com/in/zainab-code",
+      portfolio: "https://zainab.me"
+    }
+  },
+  {
+    id: "DEV-011",
+    slug: "victor-eze",
+    name: "Victor Eze",
+    role: "Cybersecurity Analyst",
+    initials: "VE",
+    avatar: "",
+    available: true,
+    location: "Owerri, Nigeria",
+    experience: "5 yrs exp.",
+    differ: "",
+    dob: "October 24, 1996",
+    email: "victor.sec@example.com",
+    phone: "+234 813 777 8888",
+    website: "victorsec.com",
+    bio: "Securing applications and networks against modern vulnerabilities and threat actors.",
+    skills: ["Python", "AWS", "Node.js"],
+    links: {
+      github: "",
+      linkedin: "https://linkedin.com/in/victor-eze-sec",
+      portfolio: ""
+    }
+  },
+  {
+    id: "DEV-012",
+    slug: "hauwa-baba",
+    name: "Hauwa Baba",
+    role: "Backend Engineer",
+    initials: "HB",
+    avatar: "",
+    available: true,
+    location: "Jos, Nigeria",
+    experience: "4 yrs exp.",
+    differ: "",
+    dob: "April 08, 1997",
+    email: "hauwa.backend@example.com",
+    phone: "+234 814 999 0000",
+    website: "hauwa.engineer",
+    bio: "Specialist in high-performance APIs, database optimization, and scalable backend services.",
+    skills: ["Express", "MongoDB", "Node.js", "Docker"],
+    links: {
+      github: "https://github.com/hauwa-b",
+      linkedin: "https://linkedin.com/in/hauwa-b",
+      portfolio: "https://hauwa.engineer"
     }
   }
 ];
