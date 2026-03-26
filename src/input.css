@@ -19,22 +19,14 @@
   html { scroll-behavior: smooth; }
   body {
     font-family: 'Inter', sans-serif;
+    background: var(--color-brand-bg);
+    color: var(--color-brand-text);
+    min-height: 100vh;
+    overflow-x: hidden;
   }
 }
 
-@layer components {
-  /* Keep complex visuals and animations that are hard to describe inline */
-  
-  .hero::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background-image: radial-gradient(circle, #c7d2fe 1px, transparent 1px);
-    background-size: 28px 28px;
-    opacity: 0.45;
-    pointer-events: none;
-  }
-
+@layer utilities {
   /* SVG float animations */
   @keyframes floatSlow {
     0%, 100% { transform: translateY(0px); }
