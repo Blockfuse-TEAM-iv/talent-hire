@@ -19,7 +19,7 @@ export const developers = [
       {
         name: "Food Restaurant Website",
         desc: "A restaurant landing page with menu and contact section.",
-        tech: ["HTML", "CSS", "JavaScript"]
+        tech: ["HTML", "CSS", "JavaScrip"]
       }
     ],
     links: {
