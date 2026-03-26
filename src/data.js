@@ -33,7 +33,7 @@ export const developers = [
     id: "DEV-002",
     slug: "mary-jane",
     name: "Mary Jane",
-    role: "UI/UX Designer",
+    role: "UI/UX Designe",
     initials: "MJ",
     avatar: "",
     available: true,
