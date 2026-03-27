@@ -116,34 +116,17 @@ function renderProfile() {
     // ── Skills (Tech Stacks Icons) ───────────────────────────────────────────────────
     const skillsEl = document.getElementById('profile-skills');
     if (skillsEl && dev.skills) {
-        // Map specific tech skills to elegant FontAwesome icons and thematic colors
-        const iconMap = {
-            'React': { icon: 'fa-brands fa-react', bg: 'bg-[#eef2ff]', text: 'text-[#4f46e5]', border: 'border-[#c7d2fe]' },
-            'JavaScript': { icon: 'fa-brands fa-js', bg: 'bg-[#fef3c7]', text: 'text-[#d97706]', border: 'border-[#fde68a]' },
-            'Python': { icon: 'fa-brands fa-python', bg: 'bg-[#f0f9ff]', text: 'text-[#0284c7]', border: 'border-[#bae6fd]' },
-            'Node.js': { icon: 'fa-brands fa-node-js', bg: 'bg-[#f0fdf4]', text: 'text-[#16a34a]', border: 'border-[#bbf7d0]' },
-            'AWS': { icon: 'fa-brands fa-aws', bg: 'bg-[#fff7ed]', text: 'text-[#ea580c]', border: 'border-[#ffedd5]' },
-            'Docker': { icon: 'fa-brands fa-docker hover:animate-bounce', bg: 'bg-[#e0f2fe]', text: 'text-[#0ea5e9]', border: 'border-[#bae6fd]' },
-            'Figma': { icon: 'fa-brands fa-figma', bg: 'bg-[#fce7f3]', text: 'text-[#db2777]', border: 'border-[#fbcfe8]' },
-            'HTML': { icon: 'fa-brands fa-html5', bg: 'bg-[#ffedd5]', text: 'text-[#ea580c]', border: 'border-[#fed7aa]' },
-            'CSS': { icon: 'fa-brands fa-css3-alt', bg: 'bg-[#e0f2fe]', text: 'text-[#0284c7]', border: 'border-[#bae6fd]' },
-            'Tailwind CSS': { icon: 'fa-solid fa-wind', bg: 'bg-[#ecfeff]', text: 'text-[#06b6d4]', border: 'border-[#a5f3fc]' },
-            'MongoDB': { icon: 'fa-brands fa-envira', bg: 'bg-[#f0fdf4]', text: 'text-[#16a34a]', border: 'border-[#bbf7d0]' },
-            'Express': { icon: 'fa-solid fa-server', bg: 'bg-gray-100', text: 'text-gray-800', border: 'border-gray-300' },
-            'Adobe XD': { icon: 'fa-solid fa-pen-nib', bg: 'bg-pink-50', text: 'text-pink-600', border: 'border-pink-200' },
-            'Wireframing': { icon: 'fa-solid fa-object-group', bg: 'bg-indigo-50', text: 'text-indigo-600', border: 'border-indigo-200' },
-            'Prototyping': { icon: 'fa-solid fa-layer-group', bg: 'bg-purple-50', text: 'text-purple-600', border: 'border-purple-200' }
-        };
-
         skillsEl.innerHTML = dev.skills.map(skill => {
-            const style = iconMap[skill] || { icon: 'fa-solid fa-code', bg: 'bg-gray-50', text: 'text-gray-600', border: 'border-gray-200' };
+            const style = { 
+                bg: 'bg-indigo-50/70', 
+                text: 'text-indigo-700', 
+                border: 'border-indigo-100/80', 
+                dot: 'bg-indigo-500' 
+            };
             return `
-            <div class="flex flex-col items-center gap-2 group cursor-pointer" title="${skill}">
-                <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl ${style.bg} border ${style.border} flex items-center justify-center text-[2rem] sm:text-[2.5rem] ${style.text} hover:scale-110 hover:shadow-lg transition-all duration-300">
-                  <i class="${style.icon} group-hover:rotate-12 transition-transform duration-300"></i>
-                </div>
-                <!-- The smaller colorful identifier icon/badge -->
-                <span class="${style.bg} border ${style.border} ${style.text} px-4 sm:px-5 py-1.5 rounded-full text-[0.65rem] sm:text-[0.7rem] font-bold uppercase tracking-widest text-center shadow-sm whitespace-nowrap">${skill}</span>
+            <div class="${style.bg} ${style.text} ${style.border} border px-4 py-2 rounded-xl text-[0.82rem] font-bold tracking-wide shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-300 cursor-default flex items-center gap-2 group whitespace-nowrap">
+                <span class="w-1.5 h-1.5 rounded-full ${style.dot} opacity-60 group-hover:opacity-100 transition-opacity"></span>
+                ${skill}
             </div>
             `;
         }).join('');
