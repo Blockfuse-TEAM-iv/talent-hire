@@ -53,7 +53,7 @@
     --radius-lg: 0.5rem;
     --radius-xl: 0.75rem;
     --radius-2xl: 1rem;
-    --drop-shadow-sm: 0 1px 2px rgb(0 0 0 / 0.15);
+    --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
     --blur-md: 12px;
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -741,6 +741,9 @@
   .py-20 {
     padding-block: calc(var(--spacing) * 20);
   }
+  .pt-\[50px\] {
+    padding-top: 50px;
+  }
   .pt-\[60px\] {
     padding-top: 60px;
   }
@@ -749,6 +752,9 @@
   }
   .pb-5 {
     padding-bottom: calc(var(--spacing) * 5);
+  }
+  .pb-20 {
+    padding-bottom: calc(var(--spacing) * 20);
   }
   .text-center {
     text-align: center;
@@ -1361,9 +1367,9 @@
       min-height: 92vh;
     }
   }
-  .lg\:translate-x-\[80px\] {
+  .lg\:translate-x-\[100px\] {
     @media (width >= 64rem) {
-      --tw-translate-x: 80px;
+      --tw-translate-x: 100px;
       translate: var(--tw-translate-x) var(--tw-translate-y);
     }
   }
