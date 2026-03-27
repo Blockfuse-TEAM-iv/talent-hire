@@ -296,14 +296,14 @@
   .mb-8 {
     margin-bottom: calc(var(--spacing) * 8);
   }
-  .mb-10 {
-    margin-bottom: calc(var(--spacing) * 10);
-  }
   .mb-12 {
     margin-bottom: calc(var(--spacing) * 12);
   }
-  .mb-\[46px\] {
-    margin-bottom: 46px;
+  .mb-\[25px\] {
+    margin-bottom: 25px;
+  }
+  .mb-\[31px\] {
+    margin-bottom: 31px;
   }
   .block {
     display: block;
