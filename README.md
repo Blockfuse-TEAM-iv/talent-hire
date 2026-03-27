@@ -1,6 +1,6 @@
 # Talent Hire — Developer Talent Board
 
-**A responsive, dynamic developer profile board built with HTML, Tailwind CSS v4, and Vanilla JavaScript.**  
+**It’s a website that shows developer profiles, works on all screen sizes, updates content dynamically, and is built using HTML, Tailwind CSS, and JavaScript**  
 
 ---
 
