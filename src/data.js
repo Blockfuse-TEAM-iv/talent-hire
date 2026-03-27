@@ -170,10 +170,10 @@ export const developers = [
   {
     id: "DEV-009",
     slug: "john-paul",
-    name: "John Paul",
+    name: "Ohakwe Johnpaul",
     role: "Software Engineer",
     initials: "JP",
-    avatar: "",
+    avatar: "assets/images/johnpaul.jpeg",
     available: true,
     location: "Lisbon, Portugal",
     experience: "5 yrs exp.",
@@ -191,7 +191,7 @@ export const developers = [
   {
     id: "DEV-010",
     slug: "dakshak",
-    name: "Dakshak",
+    name: "Dakshak John",
     role: "QA Engineer",
     initials: "DK",
     avatar: "https://vintique-one.vercel.app/public/image/daksahkj.jpeg",
