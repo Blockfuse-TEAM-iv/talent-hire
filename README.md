@@ -4,6 +4,10 @@
 
 ---
 
+## Live Demo
+
+https://dev-talent.netlify.app/
+
 ## Overview
 Talent Hire displays developer profiles as cards on the homepage. Clicking a card navigates to a reusable profile page, dynamically populated with the selected developer’s details using JavaScript.  
 
