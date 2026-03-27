@@ -256,9 +256,6 @@
   .mx-6 {
     margin-inline: calc(var(--spacing) * 6);
   }
-  .mx-auto {
-    margin-inline: auto;
-  }
   .mt-1 {
     margin-top: calc(var(--spacing) * 1);
   }
@@ -292,6 +289,9 @@
   .mb-6 {
     margin-bottom: calc(var(--spacing) * 6);
   }
+  .mb-7 {
+    margin-bottom: calc(var(--spacing) * 7);
+  }
   .mb-8 {
     margin-bottom: calc(var(--spacing) * 8);
   }
@@ -300,9 +300,6 @@
   }
   .mb-12 {
     margin-bottom: calc(var(--spacing) * 12);
-  }
-  .mb-14 {
-    margin-bottom: calc(var(--spacing) * 14);
   }
   .block {
     display: block;
@@ -403,9 +400,6 @@
   .max-w-\[960px\] {
     max-width: 960px;
   }
-  .max-w-\[1400px\] {
-    max-width: 1400px;
-  }
   .flex-1 {
     flex: 1;
   }
@@ -438,9 +432,6 @@
   }
   .resize-none {
     resize: none;
-  }
-  .grid-cols-1 {
-    grid-template-columns: repeat(1, minmax(0, 1fr));
   }
   .grid-cols-\[repeat\(auto-fill\,minmax\(230px\,1fr\)\)\] {
     grid-template-columns: repeat(auto-fill,minmax(230px,1fr));
@@ -743,11 +734,11 @@
   .py-7 {
     padding-block: calc(var(--spacing) * 7);
   }
-  .py-16 {
-    padding-block: calc(var(--spacing) * 16);
-  }
   .py-20 {
     padding-block: calc(var(--spacing) * 20);
+  }
+  .pt-8 {
+    padding-top: calc(var(--spacing) * 8);
   }
   .pt-\[60px\] {
     padding-top: 60px;
@@ -757,6 +748,9 @@
   }
   .pb-5 {
     padding-bottom: calc(var(--spacing) * 5);
+  }
+  .pb-16 {
+    padding-bottom: calc(var(--spacing) * 16);
   }
   .text-center {
     text-align: center;
@@ -1359,25 +1353,25 @@
       padding-inline: 7%;
     }
   }
-  .md\:py-24 {
-    @media (width >= 48rem) {
-      padding-block: calc(var(--spacing) * 24);
-    }
-  }
   .lg\:flex {
     @media (width >= 64rem) {
       display: flex;
     }
   }
-  .lg\:translate-x-\[20px\] {
+  .lg\:grid {
     @media (width >= 64rem) {
-      --tw-translate-x: 20px;
+      display: grid;
+    }
+  }
+  .lg\:translate-x-\[80px\] {
+    @media (width >= 64rem) {
+      --tw-translate-x: 80px;
       translate: var(--tw-translate-x) var(--tw-translate-y);
     }
   }
-  .lg\:translate-y-\[20px\] {
+  .lg\:translate-y-\[120px\] {
     @media (width >= 64rem) {
-      --tw-translate-y: 20px;
+      --tw-translate-y: 120px;
       translate: var(--tw-translate-x) var(--tw-translate-y);
     }
   }
