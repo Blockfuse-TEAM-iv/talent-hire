@@ -53,7 +53,6 @@
     --radius-lg: 0.5rem;
     --radius-xl: 0.75rem;
     --radius-2xl: 1rem;
-    --drop-shadow-sm: 0 1px 2px rgb(0 0 0 / 0.15);
     --blur-md: 12px;
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -257,6 +256,9 @@
   .mx-6 {
     margin-inline: calc(var(--spacing) * 6);
   }
+  .mx-auto {
+    margin-inline: auto;
+  }
   .mt-1 {
     margin-top: calc(var(--spacing) * 1);
   }
@@ -359,6 +361,9 @@
   .h-full {
     height: 100%;
   }
+  .min-h-\[calc\(100vh-60px\)\] {
+    min-height: calc(100vh - 60px);
+  }
   .min-h-screen {
     min-height: 100vh;
   }
@@ -400,6 +405,9 @@
   }
   .max-w-\[960px\] {
     max-width: 960px;
+  }
+  .max-w-\[1400px\] {
+    max-width: 1400px;
   }
   .flex-1 {
     flex: 1;
@@ -737,6 +745,9 @@
   }
   .py-7 {
     padding-block: calc(var(--spacing) * 7);
+  }
+  .py-12 {
+    padding-block: calc(var(--spacing) * 12);
   }
   .py-20 {
     padding-block: calc(var(--spacing) * 20);
@@ -1351,25 +1362,25 @@
       padding-inline: 7%;
     }
   }
+  .md\:py-16 {
+    @media (width >= 48rem) {
+      padding-block: calc(var(--spacing) * 16);
+    }
+  }
   .lg\:flex {
     @media (width >= 64rem) {
       display: flex;
     }
   }
-  .lg\:min-h-\[92vh\] {
+  .lg\:translate-x-\[40px\] {
     @media (width >= 64rem) {
-      min-height: 92vh;
-    }
-  }
-  .lg\:translate-x-\[80px\] {
-    @media (width >= 64rem) {
-      --tw-translate-x: 80px;
+      --tw-translate-x: 40px;
       translate: var(--tw-translate-x) var(--tw-translate-y);
     }
   }
-  .lg\:translate-y-\[120px\] {
+  .lg\:translate-y-\[40px\] {
     @media (width >= 64rem) {
-      --tw-translate-y: 120px;
+      --tw-translate-y: 40px;
       translate: var(--tw-translate-x) var(--tw-translate-y);
     }
   }
