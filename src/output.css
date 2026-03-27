@@ -741,8 +741,8 @@
   .py-20 {
     padding-block: calc(var(--spacing) * 20);
   }
-  .pt-\[50px\] {
-    padding-top: 50px;
+  .pt-\[30px\] {
+    padding-top: 30px;
   }
   .pt-\[60px\] {
     padding-top: 60px;
