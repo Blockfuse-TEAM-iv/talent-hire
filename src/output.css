@@ -292,9 +292,6 @@
   .mb-6 {
     margin-bottom: calc(var(--spacing) * 6);
   }
-  .mb-7 {
-    margin-bottom: calc(var(--spacing) * 7);
-  }
   .mb-8 {
     margin-bottom: calc(var(--spacing) * 8);
   }
@@ -746,8 +743,8 @@
   .py-7 {
     padding-block: calc(var(--spacing) * 7);
   }
-  .py-12 {
-    padding-block: calc(var(--spacing) * 12);
+  .py-16 {
+    padding-block: calc(var(--spacing) * 16);
   }
   .py-20 {
     padding-block: calc(var(--spacing) * 20);
@@ -1362,9 +1359,9 @@
       padding-inline: 7%;
     }
   }
-  .md\:py-16 {
+  .md\:py-24 {
     @media (width >= 48rem) {
-      padding-block: calc(var(--spacing) * 16);
+      padding-block: calc(var(--spacing) * 24);
     }
   }
   .lg\:flex {
@@ -1372,15 +1369,15 @@
       display: flex;
     }
   }
-  .lg\:translate-x-\[40px\] {
+  .lg\:translate-x-\[20px\] {
     @media (width >= 64rem) {
-      --tw-translate-x: 40px;
+      --tw-translate-x: 20px;
       translate: var(--tw-translate-x) var(--tw-translate-y);
     }
   }
-  .lg\:translate-y-\[40px\] {
+  .lg\:translate-y-\[20px\] {
     @media (width >= 64rem) {
-      --tw-translate-y: 40px;
+      --tw-translate-y: 20px;
       translate: var(--tw-translate-x) var(--tw-translate-y);
     }
   }
