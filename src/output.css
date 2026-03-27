@@ -800,9 +800,6 @@
   .text-\[0\.85rem\] {
     font-size: 0.85rem;
   }
-  .text-\[0\.92rem\] {
-    font-size: 0.92rem;
-  }
   .text-\[0\.95rem\] {
     font-size: 0.95rem;
   }
@@ -1327,11 +1324,6 @@
   .sm\:p-10 {
     @media (width >= 40rem) {
       padding: calc(var(--spacing) * 10);
-    }
-  }
-  .md\:flex {
-    @media (width >= 48rem) {
-      display: flex;
     }
   }
   .md\:w-80 {
