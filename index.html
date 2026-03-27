@@ -14,18 +14,25 @@
   <link rel="stylesheet" href="./src/output.css" />
 </head>
 
-<body class="font-['Inter'] bg-brand-bg text-brand-text min-h-screen overflow-x-hidden">
-  
-  <!-- Navigation Header/Logo -->
-  <nav class="absolute top-0 left-0 w-full z-50 px-7 md:px-[7%] py-8 flex items-center">
-    <a href="index.html" class="flex items-center gap-3 group">
-      <div class="w-10 h-10 bg-gradient-to-br from-brand-accent to-brand-accent2 rounded-xl flex items-center justify-center shadow-lg shadow-indigo-500/20 group-hover:shadow-indigo-500/40 transition-all duration-300 group-hover:-rotate-6">
-        <i class="fa-solid fa-terminal text-white text-lg"></i>
+<body class="font-['Inter'] bg-brand-bg text-brand-text min-h-screen overflow-x-hidden pt-[72px]">
+  <!-- Navigation Bar -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-brand-border h-[72px] flex items-center justify-between px-7 md:px-[7%] transition-all duration-300">
+    <div class="flex items-center gap-2 group cursor-pointer" onclick="window.location.href='index.html'">
+      <div class="w-10 h-10 bg-brand-accent rounded-xl flex items-center justify-center text-white shadow-lg shadow-brand-accent/20 group-hover:scale-110 transition-transform">
+        <i class="fa-solid fa-code text-sm"></i>
       </div>
-      <span class="text-2xl font-black tracking-tight text-brand-text">
-        Dev<span class="bg-gradient-to-br from-[#6366f1] via-[#8b5cf6] to-[#ec4899] bg-clip-text text-transparent">Talent</span>
+      <span class="text-xl font-black tracking-tight text-brand-text">
+        <span class="text-brand-accent">Dev</span>Talent
       </span>
-    </a>
+    </div>
+    
+    <div class="hidden md:flex items-center gap-8">
+      <a href="#profiles" class="text-[0.92rem] font-bold text-brand-muted hover:text-brand-accent transition-colors">Profiles</a>
+      <a href="#about" class="text-[0.92rem] font-bold text-brand-muted hover:text-brand-accent transition-colors">About</a>
+      <a href="https://github.com/Blockfuse-TEAM-iv/talent-hire" target="_blank" class="w-10 h-10 rounded-full bg-gray-50 flex items-center justify-center text-gray-500 hover:bg-gray-100 hover:text-gray-900 transition-all border border-gray-100">
+        <i class="fa-brands fa-github text-xl"></i>
+      </a>
+    </div>
   </nav>
 
   <!-- Hero Section -->

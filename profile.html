@@ -18,20 +18,8 @@
 
 <body class="font-['Outfit'] bg-brand-bg text-brand-text min-h-screen flex flex-col overflow-x-hidden">
 
-  <!-- Navigation Header/Logo -->
-  <nav class="absolute top-0 left-0 w-full z-50 px-7 md:px-[7%] py-8 flex items-center">
-    <a href="index.html" class="flex items-center gap-3 group">
-      <div class="w-10 h-10 bg-gradient-to-br from-[#6366f1] to-[#8b5cf6] rounded-xl flex items-center justify-center shadow-lg shadow-indigo-500/20 group-hover:shadow-indigo-500/40 transition-all duration-300 group-hover:-rotate-6">
-        <i class="fa-solid fa-terminal text-white text-lg"></i>
-      </div>
-      <span class="text-2xl font-black tracking-tight text-brand-text">
-        Dev<span class="bg-gradient-to-br from-[#6366f1] via-[#8b5cf6] to-[#ec4899] bg-clip-text text-transparent">Talent</span>
-      </span>
-    </a>
-  </nav>
-
   <!-- Main Dashboard Container -->
-  <div class="flex-1 flex items-center justify-center p-4 sm:p-6 lg:p-8 pt-28 sm:pt-32 lg:pt-36 bg-brand-bg">
+  <div class="flex-1 flex items-center justify-center p-4 sm:p-6 lg:p-8 bg-brand-bg">
     <div
       class="w-full max-w-6xl bg-white rounded-2xl shadow-xl flex flex-col md:flex-row overflow-hidden border border-brand-border">
 
@@ -99,12 +87,32 @@
       =========================================== -->
       <main class="flex-1 p-6 sm:p-10 flex flex-col bg-white">
 
-        <!-- Top Header (Back to Home button - Hidden on mobile) -->
-        <header class="flex max-md:hidden justify-between items-center border-b border-gray-100 pb-6 mb-8 mt-2 min-h-[64px]">
-          <a href="index.html"
-            class="inline-flex items-center gap-2 px-5 py-2.5 bg-gray-50 hover:bg-gray-100 text-gray-700 font-bold rounded-xl transition-colors border border-gray-200 shadow-sm text-sm group">
-            <i class="fa-solid fa-arrow-left text-gray-400 group-hover:text-gray-700 transition-colors"></i> Back
-          </a>
+        <!-- Top Header (Branding & Navigation) -->
+        <header class="flex items-center justify-between border-b border-gray-100 pb-6 mb-8 mt-2">
+          <div class="flex items-center gap-4">
+            <a href="index.html"
+              class="max-md:hidden inline-flex items-center gap-2 px-5 py-2.5 bg-gray-50 hover:bg-gray-100 text-gray-700 font-bold rounded-xl transition-colors border border-gray-200 shadow-sm text-sm group">
+              <i class="fa-solid fa-arrow-left text-gray-400 group-hover:text-gray-700 transition-colors"></i> Back
+            </a>
+            
+            <div class="max-md:hidden w-px h-6 bg-gray-200 mx-1"></div>
+
+            <!-- Brand Logo -->
+            <div class="flex items-center gap-2 group cursor-pointer" onclick="window.location.href='index.html'">
+              <div class="w-9 h-9 bg-brand-accent rounded-xl flex items-center justify-center text-white shadow-lg shadow-brand-accent/20 group-hover:scale-110 transition-transform">
+                <i class="fa-solid fa-code text-sm"></i>
+              </div>
+              <span class="text-xl font-black tracking-tight text-brand-text">
+                <span class="text-brand-accent">Dev</span>Talent
+              </span>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-3">
+             <a href="https://github.com/Blockfuse-TEAM-iv/talent-hire" target="_blank" class="w-9 h-9 rounded-full bg-gray-50 flex items-center justify-center text-gray-500 hover:bg-indigo-50 hover:text-brand-accent transition-all border border-gray-100">
+                <i class="fa-brands fa-github"></i>
+             </a>
+          </div>
         </header>
 
         <!-- About Section -->
