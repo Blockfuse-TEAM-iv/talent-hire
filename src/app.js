@@ -141,7 +141,7 @@ function renderProfile() {
         const cfg = {
             github: { icon: 'fa-brands fa-github text-[1.3rem]', hover: 'hover:text-gray-900 border-gray-200 hover:border-gray-900 hover:bg-gray-50' },
             linkedin: { icon: 'fa-brands fa-linkedin-in text-[1.2rem]', hover: 'hover:text-[#0a66c2] border-gray-200 hover:border-[#0a66c2] hover:bg-[#eff6fb]' },
-            portfolio: { icon: 'fa-solid fa-link text-[1.1rem]', hover: 'hover:text-brand-accent border-gray-200 hover:border-brand-accent hover:bg-indigo-50' },
+            twitter: {icon: 'fa-brands fa-x-twitter text-[1.1rem]', hover: 'hover:text-black border-gray-200 hover:border-black hover:bg-gray-100'}
         };
 
         linksEl.innerHTML = Object.entries(dev.links)

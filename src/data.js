@@ -17,7 +17,7 @@ export const developers = [
     bio: "Fifteen years in and blockchain still gets me out of bed. I've architected decentralised protocols, shipped production-grade smart contracts across EVM and non-EVM chains, and advised startups navigating the gap between Web2 infrastructure and Web3 ambition. I don't just write contracts — I think about the economic models behind them, the attack surfaces within them, and the users who will ultimately trust them. If you're building something that needs to last on-chain, let's talk.",
     skills: ["Solidity", "Rust", "Ethereum", "Hardhat", "Smart Contracts", "DeFi Protocols", "Web3.js", "IPFS", "Layer 2 Solutions", "Tokenomics", "Foundry", "Cairo"],
     projects: [],
-    links: { github: "", linkedin: "", portfolio: "" }
+    links: { github: "https://github.com/devylongs", linkedin: "https://www.linkedin.com/in/devlongs", twitter: "https://x.com/devlongs_" }
   },
 
   {
@@ -38,7 +38,7 @@ export const developers = [
     bio: "I work at the layer most engineers never see — designing and implementing the protocols that everything else depends on. Eight years of thinking in terms of handshakes, state machines, consensus, and fault tolerance has given me a rare kind of systems intuition. Whether it's network protocol design, p2p communication layers, or distributed coordination, I'm comfortable in the deep end.",
     skills: ["Go", "Rust", "TCP/IP", "gRPC", "Distributed Systems", "Consensus Algorithms", "libp2p", "Protocol Buffers", "C++", "Network Engineering", "WebRTC", "ZeroMQ"],
     projects: [],
-    links: { github: "", linkedin: "", portfolio: "" }
+    links: { github: "https://github.com/shaaibu7", linkedin: "https://www.linkedin.com/in/shaaibusuleiman", twitter: "https://x.com/SuleimanShaaibu" }
   },
 
   {
@@ -59,7 +59,7 @@ export const developers = [
     bio: "Two years in and I'm already obsessed with writing code that's clean, readable, and actually maintainable. I'm comfortable across the stack, quick to pick up new tools, and I bring a genuine curiosity to every problem I touch. Still early in the journey — but moving fast.",
     skills: ["JavaScript", "React", "Node.js", "HTML", "CSS", "Tailwind CSS", "Git", "REST APIs"],
     projects: [],
-    links: { github: "", linkedin: "", portfolio: "" }
+    links: { github: "https://github.com/Doubletee13", linkedin: "https://www.linkedin.com/in/temitope-akinlade-37a952318?", twitter: "https://x.com/Doubletee13th" }
   },
 
   {
@@ -80,7 +80,7 @@ export const developers = [
     bio: "Six years of building production software across different domains has taught me that good engineering is mostly about tradeoffs — knowing when to optimise, when to ship, and when to refactor. I write robust backend services, design sensible APIs, and care deeply about the reliability of what I put into the world.",
     skills: ["Python", "Django", "PostgreSQL", "Docker", "REST APIs", "TypeScript", "Redis", "AWS", "CI/CD", "Linux"],
     projects: [],
-    links: { github: "", linkedin: "", portfolio: "" }
+    links: { github: "https://github.com/mananuf", linkedin: "https://www.linkedin.com/in/mananaf-bankat-719b48189", twitter: "https://x.com/The_5thSon" }
   },
 
   {
@@ -101,7 +101,7 @@ export const developers = [
     bio: "I build intelligent systems — the kind that get better with data, generalise to new inputs, and actually work outside a notebook. Seven years across research and industry means I understand both the theory and the reality of deploying ML at scale. From feature engineering to model serving to monitoring drift in production, I've lived the full lifecycle.",
     skills: ["Python", "PyTorch", "TensorFlow", "Scikit-learn", "MLflow", "FastAPI", "Pandas", "NumPy", "LLM Fine-tuning", "Computer Vision", "NLP", "Kubernetes"],
     projects: [],
-    links: { github: "", linkedin: "", portfolio: "" }
+    links: { github: "https://github.com/dimka90", linkedin: "https://www.linkedin.com/in/filibus-yilrit-dimka-1b9700211", twitter: "https://x.com/DimkaYilrit" }
   },
 
   {
@@ -122,7 +122,7 @@ export const developers = [
     bio: "Fresh enough to still find the craft exciting, experienced enough to ship things that work. I enjoy the full process — understanding requirements, thinking through architecture, writing the code, and seeing it land in users' hands.",
     skills: ["JavaScript", "React", "Node.js", "Express", "HTML", "CSS", "Git", "MongoDB"],
     projects: [],
-    links: { github: "", linkedin: "", portfolio: "" }
+    links: { github: "https://github.com/elcareem", linkedin: "", twitter: "https://x.com/elqharim" }
   },
 
   {
@@ -143,7 +143,7 @@ export const developers = [
     bio: "Software engineer with a scholar's mindset — I don't just solve the problem in front of me, I try to understand the class of problem it belongs to. Two years in and I'm building a strong foundation across both frontend and backend, with a particular interest in writing code that's easy for the next person to work with.",
     skills: ["JavaScript", "TypeScript", "React", "Node.js", "PostgreSQL", "Git", "REST APIs", "HTML", "CSS"],
     projects: [],
-    links: { github: "", linkedin: "", portfolio: "" }
+    links: { github: "https://github.com/retkatmun", linkedin: "", twitter: "https://x.com/retkatmun164396" }
   },
 
   {
@@ -164,7 +164,7 @@ export const developers = [
     bio: "I write software that solves real problems and I take the quality of that work seriously — even at two years in. Currently sharpening my backend skills while staying sharp across the stack.",
     skills: ["Python", "JavaScript", "React", "Flask", "Node.js", "Git", "HTML", "CSS", "REST APIs"],
     projects: [],
-    links: { github: "", linkedin: "", portfolio: "" }
+    links: { github: "https://github.com/miraclengwan47", linkedin: "", twitter: "" }
   },
 
   {
@@ -185,7 +185,7 @@ export const developers = [
     bio: "Five years of building software across startups and product teams has given me a well-rounded perspective on what good engineering actually looks like in practice. I care about clean interfaces, reliable systems, and writing code that doesn't become someone else's problem six months later. Comfortable leading features end-to-end and collaborating across design and product.",
     skills: ["JavaScript", "TypeScript", "React", "Node.js", "Express", "PostgreSQL", "Docker", "REST APIs", "Git", "Tailwind CSS"],
     projects: [],
-    links: { github: "", linkedin: "", portfolio: "" }
+    links: { github: "https://github.com/johnpaulcom49-cell", linkedin: "", twitter: "" }
   },
 
   {
@@ -206,6 +206,6 @@ export const developers = [
     bio: "Quality isn't a phase at the end — it's a discipline built into every step. I bring four years of testing experience across manual, automated, and performance testing, with a strong instinct for finding the edge cases that slip through. I work closely with developers, not against them, and I think good QA makes the whole team faster.",
     skills: ["Selenium", "Cypress", "Jest", "Postman", "Python", "API Testing", "Performance Testing", "TestRail", "CI/CD", "JIRA", "Playwright", "Load Testing"],
     projects: [],
-    links: { github: "", linkedin: "", portfolio: "" }
+    links: { github: "https://github.com/johndakshak", linkedin: "", twitter: "" }
   }
 ];
